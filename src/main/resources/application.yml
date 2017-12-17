@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.3.106/sell?characterEncoding=utf-8&userSSL=false
+    username: root
+    password: root
+
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+
+    hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
