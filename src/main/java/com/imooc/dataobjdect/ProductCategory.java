@@ -3,6 +3,9 @@ package com.imooc.dataobjdect;
 
 
 
+import lombok.Data;
+import org.hibernate.annotations.DynamicUpdate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,16 +15,10 @@ import java.util.Date;
  * 类目
  */
 @Entity //实体
+@DynamicUpdate//动态生成更新
+@Data//包含 get set  toString
 public class ProductCategory {
 
-    @Override
-    public String toString() {
-        return "ProductCategory{" +
-                "CategoryId=" + CategoryId +
-                ", CategoryName='" + CategoryName + '\'' +
-                ", CategoryType=" + CategoryType +
-                '}';
-    }
 
     /**类目 id */
     @Id  //标明主键
@@ -37,27 +34,5 @@ public class ProductCategory {
 
     private Date updateTime;
 
-    public Integer getCategoryId() {
-        return CategoryId;
-    }
 
-    public void setCategoryId(Integer categoryId) {
-        CategoryId = categoryId;
-    }
-
-    public String getCategoryName() {
-        return CategoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
-        CategoryName = categoryName;
-    }
-
-    public Integer getCategoryType() {
-        return CategoryType;
-    }
-
-    public void setCategoryType(Integer categoryType) {
-        CategoryType = categoryType;
-    }
 }
