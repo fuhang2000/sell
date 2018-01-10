@@ -4,6 +4,8 @@ import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
 /**
@@ -13,7 +15,8 @@ import java.util.Date;
 @DynamicUpdate//动态生成更新
 @Data//包含 get set  toString
 public class orderMaster {
-
+    @Id
+    @GeneratedValue
     private String orderId;
 
     private String buyerName;

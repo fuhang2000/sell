@@ -23,16 +23,27 @@ public class ProductCategory {
     /**类目 id */
     @Id  //标明主键
     @GeneratedValue  //策略
-    private  Integer CategoryId;
+    private  Integer categoryId;
     /**类目名字 */
-    private  String  CategoryName;
+    private  String  categoryName;
 
     /**类目 编号 */
-    private Integer CategoryType;
+    private Integer categoryType;
 
     private Date createTime;
 
     private Date updateTime;
 
 
+    public ProductCategory(String categoryName, Integer categoryType, Date createTime) {
+
+
+        categoryName = categoryName;
+        categoryType = categoryType;
+        this.createTime = createTime;
+    }
+
+    public ProductCategory() {
+
+    }
 }
