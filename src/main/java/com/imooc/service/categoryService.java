@@ -17,5 +17,5 @@ public  interface CategoryService {
     /*查询集合中的类目*/
     public  List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryIdlist)throws Exception;
 
-    public void  save()throws Exception;
+    public ProductCategory  save(ProductCategory productCategory)throws Exception;
 }

@@ -7,7 +7,13 @@ import java.util.List;
 
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory,Integer> {
 
-    List<ProductCategory> findByCategoryTypeIn(List<Integer> list);
+    /*查询*/
+    public ProductCategory findOne(Integer categoryId) ;
+    /*查询所有*/
+    public List<ProductCategory> findAll();
+    /*查询集合中的类目*/
+    public  List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryIdlist);
 
+    public ProductCategory  save(ProductCategory productCategory);
 
 }
