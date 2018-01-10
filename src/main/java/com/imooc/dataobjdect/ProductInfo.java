@@ -16,7 +16,7 @@ import java.util.Date;
 @Data//包含 get set  toString
 public class ProductInfo {
     @Id
-    @GeneratedValue
+
     private String productId;
     /**商品名 */
     private String productName;
@@ -36,7 +36,7 @@ public class ProductInfo {
     private Date updateTime;
 
 
-
+private Integer productStatus;
 
 
 
