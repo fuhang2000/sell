@@ -28,7 +28,7 @@ private ProductInfoRepository productinfoRepsoitory;
 
     @Test
     public void findOne() throws Exception {
-        ProductInfo p=  productinfoRepsoitory.findOne("PDXSZ");
+        ProductInfo p=  productinfoRepsoitory.findOne("PDSRZ");
         Assert.assertNotNull(p);
     }
 
@@ -59,12 +59,7 @@ Assert.assertNotEquals(0,productInfoList.size());
         p.setProductStock(100);
         productinfoRepsoitory.save(p);
     }
-@Test
-    public void  findByProductcategoryTypeIn(){
-        List<Integer> list=  Arrays.asList(1,5);
-      List<ProductInfo>  productInfoList= productinfoRepsoitory.findBycategoryTypeIn(list);
-        Assert.assertNotEquals(0,list.size());
 
-    }
+
 
 }

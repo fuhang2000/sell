@@ -1,6 +1,8 @@
 package com.imooc.repository;
 
 import com.imooc.dataobjdect.ProductInfo;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -10,18 +12,8 @@ import java.util.List;
  */
 public interface  ProductInfoRepository extends JpaRepository<ProductInfo,String> {
 
-  public ProductInfo findOne(String productId);
+ public List<ProductInfo> findByProductStatus(Integer productStatus);
 
 
-    public List<ProductInfo> findAll();
-
-    public List<ProductInfo> findByProductStatus(Integer productStatus);
-
-    public List<ProductInfo> findBycategoryTypeIn(List<Integer> s);
-
-
-    //  public List<ProductInfo> findcategroyTypeIn(List<Integer> categroyTypelist);
-
-  //  public ProductInfo save(ProductInfo productInfo);
 
 }
