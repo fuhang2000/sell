@@ -19,7 +19,7 @@ private ProductCategoryRepository repository;
     public void  findoneTest(){
 
     ProductCategory productCategory=repository.findOne(1);
-    System.out.println("productCategory---------------------------");
+    System.out.println("productCategory-------------------------");
     System.out.println("productCategory"+productCategory.toString());
 }
 }
