@@ -19,7 +19,7 @@
             <level>ERROR</level>
             <!--如果匹配就禁止掉-->
             <onMatch>DENY</onMatch>
-            <!--如果匹配接受-->
+            <!--如果没有匹配接受-->
             <onMismatch>ACCEPT</onMismatch>
         </filter>
         <encoder>
@@ -40,8 +40,6 @@
    <!--只拦截error信息-->
       <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
           <level>ERROR</level>
-
-
 
       </filter>
         <encoder>
