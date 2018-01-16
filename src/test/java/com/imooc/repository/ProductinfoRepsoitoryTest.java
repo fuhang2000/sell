@@ -51,12 +51,13 @@ Assert.assertNotEquals(0,productInfoList.size());
         ProductInfo p=  new ProductInfo();
         p.setCategoryType(5);
         p.setCreateTime(new Date());
-        p.setProductDescription("123好吃");
-        p.setProductName("皮蛋粥");
-        p.setProductIcon("www");
-        p.setProductId("PDXSZ");
-        p.setProductPrice("3.2");
+        p.setProductDescription("健康有营养");
+        p.setProductName("鸡肉粥");
+        p.setProductIcon("JRZ");
+        p.setProductId("JRZ");
+        p.setProductPrice("5");
         p.setProductStock(100);
+        p.setProductStatus(0);
         productinfoRepsoitory.save(p);
     }
 

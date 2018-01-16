@@ -35,7 +35,7 @@ public class ProductCategoryRepositoryTest {
     }
 
     @Test
-    @Transactional /**不保存测试数据.(测试完成后回滚)*/
+   // @Transactional /**不保存测试数据.(测试完成后回滚)*/
     public  void saveTest(){
 
 /*更新*
@@ -46,11 +46,11 @@ public class ProductCategoryRepositoryTest {
     productCategory.setCreateTime(productCategory.getCreateTime());
 
     repository.save(productCategory);
+*/
 
 
-    */
 
-        ProductCategory productCategory=new ProductCategory("女性最爱",9,new Date());
+        ProductCategory productCategory=new ProductCategory("少年最爱",4,new Date());
         ProductCategory result=repository.save(productCategory);
         Assert.assertNotNull(result);
     }
