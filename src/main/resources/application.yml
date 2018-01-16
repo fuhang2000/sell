@@ -1,3 +1,4 @@
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -13,4 +14,8 @@ spring:
 
     hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 server:
+<<<<<<< HEAD
+  port: 8080
+=======
   context-path: /sell
+>>>>>>> 1777036b221af46730090a211da8d112e352e07f
