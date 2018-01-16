@@ -55,7 +55,7 @@ Assert.assertNotEquals(0,productInfoList.size());
         p.setProductName("鸡肉粥");
         p.setProductIcon("JRZ");
         p.setProductId("JRZ");
-        p.setProductPrice("5");
+        p.setProductPrice(null);
         p.setProductStock(100);
         p.setProductStatus(0);
         productinfoRepsoitory.save(p);

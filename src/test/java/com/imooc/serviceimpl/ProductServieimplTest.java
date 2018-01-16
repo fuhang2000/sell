@@ -13,6 +13,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -56,7 +57,7 @@ Assert.assertNotEquals(0,list.size());
         p.setProductName("八宝粥");
         p.setProductIcon("bwz");
         p.setProductId("BBZ");
-        p.setProductPrice("4.0");
+        p.setProductPrice(new BigDecimal("4.2"));
         p.setProductStatus(0);
         p.setProductStock(100);
        ProductInfo p1=productInfoRepository.save(p);
