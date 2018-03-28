@@ -38,8 +38,8 @@ public class ProductCategory {
     public ProductCategory(String categoryName, Integer categoryType, Date createTime) {
 
 
-        categoryName = categoryName;
-        categoryType = categoryType;
+        this.categoryName = categoryName;
+        this.categoryType = categoryType;
         this.createTime = createTime;
     }
 

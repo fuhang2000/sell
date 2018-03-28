@@ -14,5 +14,5 @@ public class ProductInfoVO {
 
     private String  productId;
 
-    private BigDecimal productPrie;
+    private BigDecimal productPrice;
 }

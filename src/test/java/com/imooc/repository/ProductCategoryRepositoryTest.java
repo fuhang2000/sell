@@ -35,7 +35,7 @@ public class ProductCategoryRepositoryTest {
     }
 
     @Test
-    @Transactional /**不保存测试数据.(测试完成后回滚)*/
+   // @Transactional /**不保存测试数据.(测试完成后回滚)*/
     public  void saveTest(){
 
 /*更新*
@@ -46,11 +46,11 @@ public class ProductCategoryRepositoryTest {
     productCategory.setCreateTime(productCategory.getCreateTime());
 
     repository.save(productCategory);
+*/
 
 
-    */
 
-        ProductCategory productCategory=new ProductCategory("女性最爱",9,new Date());
+        ProductCategory productCategory=new ProductCategory("少年最爱",4,new Date());
         ProductCategory result=repository.save(productCategory);
         Assert.assertNotNull(result);
     }
@@ -66,9 +66,18 @@ public void  findBycatgoryTypeInTest(){
         List<ProductCategory> result=repository.findByCategoryTypeIn(list);
 
         Assert.assertNotEquals(0,result.size());
+<<<<<<< HEAD
     ProductCategory productCategory=repository.findOne(1);
     System.out.println("productCategory-------------------------");
     System.out.println("productCategory"+productCategory.toString());
+=======
+
+
+    ProductCategory productCategory=repository.findOne(1);
+    System.out.println("productCategory-------------------------");
+    System.out.println("productCategory"+productCategory.toString());
+
+>>>>>>> 2049d28a0a08ca9f77f63f15a9bcd8650968f20a
 }
 
 }
