@@ -2,9 +2,10 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://123.207.235.243/sell?characterEncoding=utf-8&userSSL=false
+   # url: jdbc:mysql://123.207.235.243/sell?characterEncoding=utf-8&userSSL=false
+    url: jdbc:mysql://192.168.3.102/sell?characterEncoding=utf-8&userSSL=false
     username: root
-    password: root1
+    password: 123456
 
 
   jpa:
@@ -15,10 +16,9 @@ spring:
     hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 server:
 
-<<<<<<< HEAD
-=======
+
   port: 8080
->>>>>>> 2049d28a0a08ca9f77f63f15a9bcd8650968f20a
+
 
   context-path: /sell
 
