@@ -66,13 +66,9 @@ public void  findBycatgoryTypeInTest(){
         List<ProductCategory> result=repository.findByCategoryTypeIn(list);
 
         Assert.assertNotEquals(0,result.size());
-
-<<<<<<< HEAD
     ProductCategory productCategory=repository.findOne(1);
     System.out.println("productCategory-------------------------");
     System.out.println("productCategory"+productCategory.toString());
-=======
->>>>>>> 1777036b221af46730090a211da8d112e352e07f
 }
 
 }

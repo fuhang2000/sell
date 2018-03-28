@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 public class ProductVO {
 
-@JsonProperty("name")
+    @JsonProperty("name")
     private  String  categroyName;
     @JsonProperty("type")
     private  Integer categroyType;
